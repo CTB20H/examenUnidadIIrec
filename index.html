@@ -7,10 +7,39 @@
     <link rel="stylesheet" href="/css/index.css">
 </head>
 <header>
+    <center>
     <h2>Colegio Marina</h2>
     <h3>Listado de alumnos</h3>
-    <h4>Estadísticas de calificiones</h4>
+    <h3>Estadísticas de calificiones</h3>
+    </center>
 </header>
-<body>
+<body> 
+    <label> Nivel y Turno </label><br>
+      <select>
+        <option> Primaria </option>
+        <option> Secundaria </option>
+        <option> Preparatoria </option>
+      </select>
+    <select>
+        <option> Matutino</option>
+        <option> Vespertino</option>
+    </select><br>
+    <center>
+        <button id="filtrar"> Filtrar </button>
+        <button id="Limpiar"> Limpiar </button>
+    </center>
+    <table class="tabla">
+    <thead>
+    <tr>
+        <th id="matricula">Matrícula</th>
+        <th id="name">Nombre</th>
+        <th id="promedio">Promedio</th>
+        <th id="nivel">Nivel</th>
+        <th id="turno">Turno</th>
+    </tr>
+    <tbody id="tbody">
+
+    </tbody>
 </body>
+<script src="/js/alumnos.js"></script>
 </html>
